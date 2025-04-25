@@ -4,13 +4,13 @@ const mongoose = require("mongoose")
 const Product = require('./models/product')
 
 const app = express()
-const port = 3000
 const jwt = require('jsonwebtoken')
 require('dotenv').config()
 const secret_key=process.env.JWT_SECRET_KEY
 const cors = require('cors');
 const bcrypt = require('bcrypt')
 const live_url = process.env.LIVE_URL
+const port = process.env.PORT 
 
 
 
